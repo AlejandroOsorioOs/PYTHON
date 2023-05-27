@@ -1,0 +1,21 @@
+Algoritmo SUMAPARES
+	// Suma de los números pares comprendidos entre 2 y 100.
+	
+	sum=0;
+	i=0;
+	
+	Escribir "                                    BIENVENIDO: ";
+	Escribir "";
+	Escribir "";
+	Escribir "Este programa Suma de los números pares comprendidos entre 2 y 100 y le entrega el resultado final. ";
+	Escribir "";
+	Escribir "Empecemos!!!";
+	
+	Mientras i<=100 Hacer
+		sum=sum+i;
+		i=i+2;
+	Fin Mientras
+	
+	Escribir "LA SUMA TOTAL ES: " sum;
+	
+FinAlgoritmo

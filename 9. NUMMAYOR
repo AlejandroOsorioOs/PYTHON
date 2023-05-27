@@ -1,0 +1,49 @@
+Algoritmo NUMMAYOR
+	// Algoritmo que acepte tres números enteros e imprima el mayor de ellos.
+	
+	Definir a Como entero;
+	a=0;
+	
+	Definir b Como entero;
+	b=0;
+	
+	Definir c Como entero;
+	c=0;
+	
+	
+	Escribir "                              BIENVENIDO: ";
+	Escribir "";
+	Escribir "";
+	Escribir "DIGITE EL PRIMER NUMERO: ";
+	leer a;
+	
+	Escribir "";
+	Escribir "";
+	Escribir "DIGITE EL SEGUNDO NUMERO: ";
+	leer b;
+	
+	Escribir "";
+	Escribir "";
+	Escribir "DIGITE EL TERCER NUMERO: ";
+	leer c;
+	
+	Si a>b y a>c Entonces
+		Escribir "";
+		Escribir "";
+		Escribir "EL NUMERO MAYOR ES: " a;
+		
+
+	SiNo
+		Si b>a y b>c Entonces
+			Escribir "EL NUMERO MAYOR ES: " b;
+		SiNo
+			Escribir "EL NUMERO MAYOR ES: " c;
+		Fin Si
+
+	Fin Si
+	
+	
+	
+	
+	
+FinAlgoritmo

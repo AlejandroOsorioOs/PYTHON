@@ -1,0 +1,98 @@
+Algoritmo ECUACION
+	
+	//Algoritmo para resolver una ecuación de segundo grado Ax2 + Bx + C = 0.
+	
+	Definir a Como real;
+	a=0;
+	
+	Definir b Como real;
+	b=0;
+	
+	Definir c Como real;
+	c=0;
+	
+	Definir d Como real;
+	d=0;
+	
+	Definir raiz1 Como real;
+	raiz1=0;
+	
+	Definir raiz2 Como real;
+	raiz2=0;
+	
+	Definir x1 Como real;
+	x1=0;
+	
+	Definir x2 Como real;
+	x2=0;
+	
+	
+	Escribir "                              BIENVENIDO: ";
+	Escribir "";
+	Escribir "";
+	Escribir "Este programa calcula ecuaciones de segundo grado de tipo ax^2+bx+c=0 y le entrega la respuesta. ";
+	Escribir "";
+	Escribir "Empecemos!!!";
+	Escribir "";
+	Escribir "";
+	Escribir "DIGITE EL VALOR DE LA VARIABLE A: ";
+	leer a;
+	Mientras a=0 Hacer
+		Escribir "";
+		Escribir "";
+		Escribir "EL VALOR DE LA VARIABLE A NO PUEDE SER 0, INTENTELO NUEVAMENTE: ";
+		leer a;
+	Fin Mientras
+	
+	Escribir "";
+	Escribir "DIGITE EL VALOR DE LA VARIABLE B: ";
+	leer b;
+	
+	Escribir "";
+	Escribir "DIGITE EL VALOR DE LA VARIABLE C: ";
+	leer c;
+	
+	Escribir "________________________________________________________________________________________________";
+	Escribir "________________________________________________________________________________________________";
+
+	
+	d= (b^2)-((4)*(a)*(c));
+	
+	
+	Escribir "";
+	Escribir "EL DISCRIMINANTE ES " ,d;
+	Escribir "";
+	Escribir "************************************************************************************************";
+	
+	Si d = 0 Entonces
+		Escribir "";
+		Escribir "LA RESPUESTA ES: X= " ,d;
+	SiNo
+		Si d > 0 Entonces
+			raiz1= (raiz(d));			//positiva
+			raiz2= (-(raiz(d)));		//negativa
+			
+			x1= ((-b)+(raiz1))/(2*a);	//positiva
+			x2= ((-b)+(raiz2))/(2*a);	//negativa
+			
+			Escribir "";
+			Escribir "LA RESPUESTA DE X1 ES: X1= " ,x1;
+			Escribir "";
+			Escribir "LA RESPUESTA DE X2 ES: X2= " ,x2;
+			
+		SiNo
+			
+			Escribir "";
+			Escribir "EL RESULTADO NO ES REAL, TIENE DOS SOLUCIONES COMPLEJAS";
+			Escribir "";
+			Escribir "LA RESPUESTA DE X1 ES: X1= i";
+			Escribir "";
+			Escribir "LA RESPUESTA DE X2 ES: X2= -i";
+			
+		Fin Si
+	Fin Si
+	
+	
+	
+	
+FinAlgoritmo

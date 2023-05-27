@@ -1,0 +1,105 @@
+Algoritmo LLAMADA
+	//Determinar la cantidad total a pagar por una llamada telefónica, teniendo en cuenta lo siguiente:
+	//toda llamada que dure menos de tres minutos tiene un coste de 10 céntimos,
+	//cada minuto adicional a partir de los tres primeros es un paso de contador y cuesta 5 céntimos.
+	
+	Definir nom_cli Como caracter;
+	
+	Definir min_lla Como real;
+	min_lla=0;
+	
+	Definir min_adi Como real;
+	min_adi=0;
+	
+	Definir val_lla Como real;
+	sal_bru=0;
+	
+	Definir val_adi Como real;
+	val_adi=0;
+	
+	Definir val_tot Como real;
+	val_tot=0;
+	
+	
+	Escribir "                              BIENVENIDO: ";
+	Escribir "";
+	Escribir "";
+	Escribir "DIGITE EL NOMBRE DEL CLIENTE: ";
+	leer nom_cli;
+	
+	Escribir "";
+	Escribir "";
+    Escribir "DIGITE EL NUMERO DE MINUTOS DE LA LLAMADA: ";
+	leer min_lla;
+	
+	Escribir "________________________________________________________________________________________________";
+	Escribir "________________________________________________________________________________________________";
+
+	
+	Si min_lla <= 3 Entonces
+		val_lla = 3*10;
+		
+		Escribir "";
+		Escribir "";
+		
+		Escribir "NOMBRE DEL CLIENTE: " nom_cli;
+		Escribir "";
+		Escribir "";
+		
+		Escribir "MINUTOS DE LA LLAMADA: " min_lla;
+		Escribir "";
+		Escribir "";
+		
+		Escribir "VALOR DE LA LLAMADA: " val_lla;
+		Escribir "";
+		Escribir "";
+		
+		Escribir "MINUTOS ADICIONALES: " min_adi;
+		Escribir "";
+		Escribir "";
+		
+		Escribir "VALOR MINUTOS ADICIONALES: " val_adi;
+		Escribir "";
+		Escribir "";
+		
+		Escribir "VALOR TOTAL DE LA LLAMADA: " val_lla;
+		Escribir "";
+		Escribir "";
+		
+		
+	SiNo
+		val_lla = 3*10;
+		min_adi = min_lla - 3;
+		val_adi = min_adi * 5;
+		val_tot = val_lla + val_adi;
+		
+		Escribir "";
+		Escribir "";
+		
+		Escribir "NOMBRE DEL CLIENTE: " nom_cli;
+		Escribir "";
+		Escribir "";
+		
+		Escribir "MINUTOS DE LA LLAMADA: " min_lla;
+		Escribir "";
+		Escribir "";
+		
+		Escribir "VALOR DE LA LLAMADA: " val_lla;
+		Escribir "";
+		Escribir "";
+		
+		Escribir "MINUTOS ADICIONALES: " min_adi;
+		Escribir "";
+		Escribir "";
+		
+		Escribir "VALOR MINUTOS ADICIONALES: " val_adi;
+		Escribir "";
+		Escribir "";
+		
+		Escribir "VALOR TOTAL DE LA LLAMADA: " val_tot;
+		Escribir "";
+		Escribir "";
+		
+	Fin Si
+	
+FinAlgoritmo

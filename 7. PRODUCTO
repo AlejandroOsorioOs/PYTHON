@@ -1,0 +1,27 @@
+Algoritmo PRODUCTO
+	
+	tot=1;
+	i=1;
+	
+	Definir n Como entero;
+	n=0;
+	
+	Escribir "                                    BIENVENIDO: ";
+	Escribir "";
+	Escribir "";
+	Escribir "Este programa calcula el producto de los n primeros numeros enteros y le entrega el resultado final. ";
+	Escribir "";
+	Escribir "Empecemos!!!";
+	Escribir "";
+	Escribir "";
+	Escribir "DIGITE HASTA QUE NUMERO DESEA CALCULAR ";
+	Leer n;
+	
+	Mientras i <= n Hacer
+		tot=tot*i;
+		i=i+1;
+	Fin Mientras
+	
+	Escribir "EL PRODUCTO TOTAL ES: " tot;
+	
+FinAlgoritmo

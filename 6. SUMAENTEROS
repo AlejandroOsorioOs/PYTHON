@@ -1,0 +1,22 @@
+Algoritmo SUMAENTERO
+	//Calcular la suma de los cincuenta primeros números enteros.
+	
+	sum=0;
+	i=0;
+	
+	Escribir "                                    BIENVENIDO: ";
+	Escribir "";
+	Escribir "";
+	Escribir "Este programa Suma de los 50 primeros numeros enteros y le entrega el resultado final. ";
+	Escribir "";
+	Escribir "Empecemos!!!";
+	
+	Mientras i<=50 Hacer
+		sum=sum+i;
+		i=i+1;
+	Fin Mientras
+	
+	Escribir "LA SUMA TOTAL ES: " sum;
+	
+	
+FinAlgoritmo
